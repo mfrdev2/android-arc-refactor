@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import javax.inject.Singleton;
 
-@Singleton
+
 public class ViewModelProviderFactory<T extends  ViewModel> extends ViewModelProvider.NewInstanceFactory {
 
     private final Class<T> viewModelClass;

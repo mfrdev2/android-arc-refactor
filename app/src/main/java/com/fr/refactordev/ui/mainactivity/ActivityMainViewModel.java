@@ -4,24 +4,25 @@ import android.app.Application;
 import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 
 import com.fr.refactor.utils.network.Resource;
 import com.fr.refactordev.MyApp;
 import com.fr.refactordev.R;
-import com.fr.refactordev.base.BaseViewModel;
 import com.fr.refactordev.data.remote.repositories.AddressRepo;
 import com.fr.refactordev.model.api.Address;
+import com.fr.refactordev.utils.network.NetworkUtils;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
-public class ActivityMainViewModel extends BaseViewModel<com.fr.refactor.ui.mainactivity.Navigator> {
+public class ActivityMainViewModel extends AndroidViewModel {
 
     final MediatorLiveData<Resource<List<Address>>> addressListData = new MediatorLiveData<>();
-    @Inject
+
     public AddressRepo addressRepo;
 
     private Application application;
@@ -35,10 +36,6 @@ public class ActivityMainViewModel extends BaseViewModel<com.fr.refactor.ui.main
     public ActivityMainViewModel(@NonNull Application application) {
         super(application);
         this.application = application;
-
-        setText(getVersionName());
-        (((MyApp)application)).appComponent.inject(this);
-
         System.out.println(addressRepo);
         sendAddressListRequest("Dhaka",null);
 
@@ -53,14 +50,12 @@ public class ActivityMainViewModel extends BaseViewModel<com.fr.refactor.ui.main
         this.text = text;
     }
 
-    public void onClick(View v){
-        getNavigator().onGO(v);
-    }
+
 
 
 
     public void sendAddressListRequest(String address, String language) {
-        if (!isNetworkConnected()) {
+        if (NetworkUtils.isNetworkConnected(application.getApplicationContext())) {
             addressListData.setValue(Resource.error(application.getResources().getString(R.string.check_internet), null));
             return;
         }

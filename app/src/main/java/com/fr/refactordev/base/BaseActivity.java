@@ -1,3 +1,4 @@
+/*
 package com.fr.refactordev.base;
 
 import android.annotation.TargetApi;
@@ -42,16 +43,20 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
     @Inject
     protected V viewModel;
 
-    /**
+    */
+/**
      * Override for set binding variable
      *
      * @return variable id
-     */
+     *//*
+
     public abstract int getBindingVariable();
 
-    /**
+    */
+/**
      * @return layout resource id
-     */
+     *//*
+
     public abstract
     @LayoutRes
     int getLayoutId();
@@ -67,29 +72,35 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
 
     }
 
-    /**
+    */
+/**
      * redirect to another activity
      * @param cls
-     */
+     *//*
+
     public void turn2Activity(Class<?> cls) {
         Intent i = new Intent(this, cls);
         startActivity(i);
     }
 
 
-    /**
+    */
+/**
      * redirect to another activity for result
      * @param cls
-     */
+     *//*
+
     public void turn2ActivityForResult(Class<?> cls){
         Intent i = new Intent(this, cls);
         resultLauncher.launch(i);
     }
 
-    /**
+    */
+/**
      * redirect to another activity for result
      * @param intent
-     */
+     *//*
+
     public void turn2ActivityForResult(Intent intent){
         resultLauncher.launch(intent);
     }
@@ -107,10 +118,12 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
         return versionName;
     }
 
-    /**
+    */
+/**
      * @param cls
      * @param bundle
-     */
+     *//*
+
     public void turn2Activity(Class<?> cls, Bundle bundle) {
         Intent i = new Intent(this, cls);
         i.putExtras(bundle);
@@ -122,10 +135,12 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
     }
 
 
- /*   @Override
+ */
+/*   @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-    }*/
+    }*//*
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -240,3 +255,4 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
 
 
 }
+*/

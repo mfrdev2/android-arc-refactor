@@ -14,14 +14,18 @@ import com.fr.refactordev.utils.AppConstants;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import dagger.hilt.InstallIn;
+import dagger.hilt.components.SingletonComponent;
 import retrofit2.Retrofit;
 
 @Module
+@InstallIn(SingletonComponent.class)
 public class ApiModule {
 
     @Singleton

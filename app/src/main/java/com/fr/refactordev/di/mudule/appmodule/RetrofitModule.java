@@ -5,6 +5,8 @@ import javax.inject.Named;
 import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
+import dagger.hilt.InstallIn;
+import dagger.hilt.components.SingletonComponent;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -15,6 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import timber.log.Timber;
 
 @Module
+@InstallIn(SingletonComponent.class)
 public class RetrofitModule {
  //   private static final String GAS_MONKEY_BASE_URL = "http://192.168.30.123:8801/";   //DEV-SERVER
     private static final String GAS_MONKEY_BASE_URL = "https://testapi-k8s.oss.net.bd/gas-monkey/"; //BA-UAT

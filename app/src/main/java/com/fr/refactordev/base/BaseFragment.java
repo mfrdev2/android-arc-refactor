@@ -1,3 +1,4 @@
+/*
 package com.fr.refactordev.base;
 
 import android.content.Context;
@@ -29,16 +30,20 @@ public abstract class BaseFragment<T extends ViewDataBinding, V extends BaseView
     @Inject
     protected V viewModel;
 
-    /**
+    */
+/**
      * Override for set binding variable
      *
      * @return variable id
-     */
+     *//*
+
     public abstract int getBindingVariable();
 
-    /**
+    */
+/**
      * @return layout resource id
-     */
+     *//*
+
     public abstract
     @LayoutRes
     int getLayoutId();
@@ -126,3 +131,4 @@ public abstract class BaseFragment<T extends ViewDataBinding, V extends BaseView
         void onFragmentDetached(String tag);
     }
 }
+*/

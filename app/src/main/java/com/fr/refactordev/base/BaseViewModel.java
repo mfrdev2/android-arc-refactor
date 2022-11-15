@@ -1,3 +1,4 @@
+/*
 package com.fr.refactordev.base;
 
 import android.app.Application;
@@ -55,3 +56,4 @@ public abstract class BaseViewModel<N> extends AndroidViewModel {
         return versionName;
     }
 }
+*/

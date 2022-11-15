@@ -5,19 +5,19 @@ import android.app.Activity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelStoreOwner;
 
-import com.fr.refactordev.base.BaseActivity;
 import com.fr.refactordev.ui.mainactivity.ActivityMainViewModel;
 
 import dagger.Module;
 import dagger.Provides;
+import dagger.hilt.InstallIn;
+import dagger.hilt.android.components.ActivityComponent;
 
 @Module
+@InstallIn(ActivityComponent.class)
 public class ActivityModule {
     private Activity activity;
 
-    public ActivityModule(BaseActivity<?, ?> activity) {
-        this.activity = activity;
-    }
+
 
     @Provides
     public ActivityMainViewModel provideMainActivityViewModel() {
