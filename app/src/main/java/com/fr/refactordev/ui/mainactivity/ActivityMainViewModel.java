@@ -1,23 +1,19 @@
 package com.fr.refactordev.ui.mainactivity;
 
 import android.app.Application;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 
-import com.fr.refactor.utils.network.Resource;
-import com.fr.refactordev.MyApp;
 import com.fr.refactordev.R;
 import com.fr.refactordev.data.remote.repositories.AddressRepo;
 import com.fr.refactordev.model.api.Address;
 import com.fr.refactordev.utils.network.NetworkUtils;
+import com.fr.refactordev.utils.network.Resource;
 
 import java.util.List;
-
-import javax.inject.Inject;
 
 public class ActivityMainViewModel extends AndroidViewModel {
 
