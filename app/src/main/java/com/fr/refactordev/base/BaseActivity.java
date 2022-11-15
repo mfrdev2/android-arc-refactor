@@ -20,11 +20,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.fr.refactor.utils.common.CommonUtils;
-import com.fr.refactor.utils.network.NetworkUtils;
 import com.fr.refactordev.MyApp;
 import com.fr.refactordev.di.component.ActivityComponent;
 import com.fr.refactordev.di.component.DaggerActivityComponent;
 import com.fr.refactordev.di.mudule.activitymodule.ActivityModule;
+import com.fr.refactordev.utils.network.NetworkUtils;
 
 import java.util.Map;
 

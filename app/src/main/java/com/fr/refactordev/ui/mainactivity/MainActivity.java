@@ -18,7 +18,7 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-public class MainActivity extends BaseActivity<ActivityMainBinding, ActivityMainViewModel> implements com.fr.refactor.ui.mainactivity.Navigator {
+public class MainActivity extends BaseActivity<ActivityMainBinding, ActivityMainViewModel> implements Navigator {
     private static final String TAG = MainActivity.class.getSimpleName();
 
     @Inject

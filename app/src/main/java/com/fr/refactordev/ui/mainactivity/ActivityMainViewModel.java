@@ -6,19 +6,19 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
-
-import com.fr.refactor.utils.network.Resource;
 import com.fr.refactordev.MyApp;
 import com.fr.refactordev.R;
+
 import com.fr.refactordev.base.BaseViewModel;
 import com.fr.refactordev.data.remote.repositories.AddressRepo;
 import com.fr.refactordev.model.api.Address;
+import com.fr.refactordev.utils.network.Resource;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
-public class ActivityMainViewModel extends BaseViewModel<com.fr.refactor.ui.mainactivity.Navigator> {
+public class ActivityMainViewModel extends BaseViewModel<Navigator> {
 
     final MediatorLiveData<Resource<List<Address>>> addressListData = new MediatorLiveData<>();
     @Inject

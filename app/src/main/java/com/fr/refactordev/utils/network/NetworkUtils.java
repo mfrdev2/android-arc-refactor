@@ -1,4 +1,4 @@
-package com.fr.refactor.utils.network;
+package com.fr.refactordev.utils.network;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

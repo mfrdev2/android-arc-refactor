@@ -2,11 +2,11 @@ package com.fr.refactordev.data.remote.repositories;
 
 import android.content.Context;
 
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.LiveDataReactiveStreams;
 import androidx.lifecycle.MediatorLiveData;
 
-import com.fr.refactor.utils.network.Resource;
 import com.fr.refactordev.R;
 import com.fr.refactordev.data.preferances.prefs.PreferencesHelper;
 import com.fr.refactordev.data.remote.dao.AddressDao;
@@ -15,6 +15,7 @@ import com.fr.refactordev.model.api.Geojson;
 import com.fr.refactordev.model.api.LatLng;
 import com.fr.refactordev.utils.AppConstants;
 import com.fr.refactordev.utils.network.NetworkErrorHandler;
+import com.fr.refactordev.utils.network.Resource;
 import com.google.gson.JsonArray;
 
 import java.util.ArrayList;

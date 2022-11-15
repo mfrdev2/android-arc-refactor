@@ -1,4 +1,4 @@
-package com.fr.refactor.ui.mainactivity;
+package com.fr.refactordev.ui.mainactivity;
 
 import android.view.View;
 
