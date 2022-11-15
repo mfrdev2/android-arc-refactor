@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RefactorDev</string>
+    <string name="error_occure">Error occure</string>
+    <string name="could_not_connect_to_server">Could not connect to server</string>
+    <string name="dialog_tip">dialogtip</string>
+    <string name="dialog_back">dialog back</string>
+    <string name="check_internet">Check your internet connection.</string>
+</resources>
