@@ -7,8 +7,7 @@ import android.content.pm.PackageManager;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
-
-import com.fr.refactor.utils.network.NetworkUtils;
+import com.fr.refactordev.utils.network.NetworkUtils;
 
 import java.lang.ref.WeakReference;
 

@@ -1,4 +1,4 @@
-package com.fr.refactor.utils.network;
+package com.fr.refactordev.utils.network;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
